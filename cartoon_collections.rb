@@ -5,8 +5,11 @@ def roll_call_dwarves(dwarf_array)
   
 end
 
-def summon_captain_planet# code an argument here
+def summon_captain_planet(planeteers)# code an argument here
   # Your code here
+  planeteers.collect do |hero|
+    hero.capitalize + "!"
+  end 
 end
 
 def long_planeteer_calls# code an argument here
