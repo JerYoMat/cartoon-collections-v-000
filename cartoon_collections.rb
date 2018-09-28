@@ -21,5 +21,7 @@ end
 def find_the_cheese(string_array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  
+  cheese_types.each_with_index do |cheese, i|
+    return cheese if cheese == string_array[i]
+  end 
 end
